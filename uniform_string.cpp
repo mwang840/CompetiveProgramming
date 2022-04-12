@@ -6,14 +6,15 @@ using namespace std;
 string uniformString(int t, int k);
 
 int main(void){
+    int num, num2;
+    cin >> num >> num2;
+    cout << uniformString(num, num2);
     return 0;
 }
 
 string uniformString(int t, int k){
     vector<char> alphabets = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-
     bool flag = false;
-    int freQuency = 0;
     string uniform = "";
 
     for(int i = 0; i < t; ++i){

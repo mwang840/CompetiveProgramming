@@ -11,9 +11,10 @@ string uniformString(int t, int k);
 
 int main(void){
     int testCases, num, num2;
-    cin >> testCases >> num >> num2;
+    cin >> testCases; 
     for(int i = 0; i < testCases; ++i){
-        cout << uniformString(num, num2);
+        cin >> num >> num2;
+        cout << uniformString(num, num2)<<"\n";
     }
     return 0;
 }
@@ -24,12 +25,16 @@ string uniformString(int t, int k){
     string uniform = "";
     int minTimes = t/k;
     char temp = 'a';
-    for(int i = 1; i <= t; ++i){
+    for(int i = 1; i <= minTimes * k; ++i){
         if(i % minTimes == 0){
             temp+=1;
         }
         uniform += temp;
     }
-
+    if(uniform.length() != t){
+        for(int i = 0; i < t % k; ++i){
+            uniform += temp - 1;
+        }
+    }
     return uniform;
 }

@@ -18,16 +18,16 @@ int main(){
 }
 
 string Division(int number){
-    if(number <= 1399){
-        return "Division 4";
+    if(number >= 1900){
+        return "Division 1";
     }
-    else if(1400<=number<=1599){
-        return "Division 3";
-    }
-    else if(1600<= number <= 1899){
+    else if(number >= 1600 && number <= 1899){
         return "Division 2";
     }
-    else if(1900 <= number){
-        return "Division 1";
+    else if(number >= 1400 && number <= 1599){
+        return "Division 3";
+    }
+    else if(number <= 1399){
+        return "Division 4";
     }
 }

@@ -10,7 +10,7 @@ string oddOrEven(int arr[]);
 int main(void){
     int testCases, arrLength, numbers;
     cin >> testCases, arrLength;
-    int testingArray[0] = {};
+    int *testingArray[] = new int[arrLength];
     for(int i = 0; i < arrLength; ++i){
         cin >> numbers;
         testingArray[i] = numbers;

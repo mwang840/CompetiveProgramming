@@ -8,13 +8,22 @@ long long int twoLetterStrings(string twoLetters);
 
 
 int main(){
-    int testCase, i;
+    int testCase, i, j, k;
+    i = 0;
+    k = 0;
     string onlyLetters;
     cin >> testCase;
     while(i <= testCase){
-        cin >> onlyLetters;
-        cout << endl;
+        cin >> j;
+        for(int i; i )
+        while(k <= j){
+            cin >> onlyLetters;
+            cout << endl;
+            k++;
+        }
+        
         cout << twoLetterStrings(onlyLetters)<<endl;
+        i++;
     }
     return 0;
 }

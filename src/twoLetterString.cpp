@@ -15,7 +15,7 @@ int main(){
     cin >> testCase;
     while(i <= testCase){
         cin >> j;
-        for(int i; i )
+        //for(int i; i )
         while(k <= j){
             cin >> onlyLetters;
             cout << endl;

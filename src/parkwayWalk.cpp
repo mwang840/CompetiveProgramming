@@ -11,7 +11,7 @@ int main(){
     cout <<"\n";
     for(int i = 0; i < testCases; ++i){
         cin >> one >> two;
-        cout << parkwayWalk(one, two);
+        cout << parkwayWalk(one, two) << endl;
     }
     return 0;
 }

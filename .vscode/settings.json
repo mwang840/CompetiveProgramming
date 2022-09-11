@@ -4,6 +4,7 @@
         "xstring": "cpp",
         "map": "cpp",
         "unordered_map": "cpp",
-        "keyboard.dispatch": "keyCode"
+        "keyboard.dispatch": "keyCode",
+        "vector": "cpp"
     }
 }

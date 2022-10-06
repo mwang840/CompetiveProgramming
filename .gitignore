@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+*.pycache
+node_modules/
+Obj/
